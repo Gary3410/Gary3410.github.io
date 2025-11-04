@@ -59,29 +59,13 @@ Collectively, these metrics evaluate both the effectiveness (task success and fu
 ## 📅 Time Schedule
 **Cadence:** Preparation → Public Release → Online Competition (Simulation track) → Onsite Finals (Onsite track)
 
-### Phase A · Preparation — Now → early Nov 2025 (e.g., Nov 5)
-**Deliverables (Organizers):**
 
-- ARTC / SIMTech: Final task specs, metrics, safety & HRI protocol, real-world (onsite) scene setup, data-collection plan and datasets
-- Galaxea: Robotic platform
-- IHPC: Simulation assets/dataset with a documented data-collection plan and simulation datasets
-- NTU & Stanford: Baselines (code + ckpt); evaluator (Docker/ROS)
-
-**Actions:**
-
-- NTU: Internal dry-run & validation
-- NRP: Website & FAQ draft; venue/platform confirmation
-
-**Comms:**
-
-- AAAI: Announcement materials prepared; office hours schedule published
-
-### Phase B · Public Release — Nov 6, 2025 (target)
+### Phase A · Public Release — Nov 6, 2025
 - **Open:** Team registration; simulation submission portal.
 - **Publish:** Website, rules v1.0, dataset, evaluator, baselines; leaderboard policy.
 - **Comms:** Kick-off webinar & FAQ v1.0.
 
-### Phase C · Online Competition (Simulation) — Nov 6, 2025 → Jan 10, 2026
+### Phase B · Online Competition (Simulation) — Nov 6, 2025 → Jan 10, 2026
 - **Submission cadence:** Rolling; leaderboard refresh bi-weekly (Fri 18:00 UTC)
 - **Checkpoints:**
   - Rules Freeze: Dec 10, 2025 — thereafter only clarifications.
@@ -91,7 +75,7 @@ Collectively, these metrics evaluate both the effectiveness (task success and fu
 - **Evaluation:** Reproducibility re-runs for top-k; anomaly review
 - **Shortlist Notification:** Jan 12, 2026 — finalists invited to onsite
 
-### Phase D · Onsite Finals (Real-World) — Jan 26, 2026
+### Phase C · Onsite Finals (Real-World) — Jan 26, 2026
 - Check-in, safety briefing, calibration & dry-run slots
 - Official trials
 - Live demonstrations by top teams; awards & closing remarks
