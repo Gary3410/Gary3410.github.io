@@ -150,5 +150,10 @@ Collectively, these metrics evaluate both the effectiveness (task success and fu
 - **Fairness:** All teams evaluated under identical conditions with standardized kits to ensure comparability and reproducibility
 - **Evaluation:** Based on defined metrics; online track results shown on a public leaderboard and final rankings announced on-site
 
+## 🏅 Award
+- 🥇: xxxxxxxxx
+- 🥈: xxxxxxxxx
+- 🥉: xxxxxxxxx
+
 
 
