@@ -16,19 +16,53 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
   <style>
-    body { display: flex; flex-direction: column; height: 100vh; background-color: #fafafa; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto; }
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #fafafa;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    }
     .content { display: flex; flex: 1; overflow: hidden; }
-    aside { width: 250px; background-color: #f8f9fa; border-right: 1px solid #e5e7eb; padding: 1rem; overflow-y: auto; }
-    main { flex: 1; padding: 2rem; overflow-y: auto; background-color: white; }
-    pre { background-color: #f6f8fa !important; border-radius: 8px; padding: 1em; overflow-x: auto; border: 1px solid #e5e7eb; }
-    code { font-family: Consolas, "Courier New", monospace; font-size: 0.9rem; }
-    main h1, main h2, main h3 { margin-top: 2em; margin-bottom: 0.8em; font-weight: 600; color: #1f2937; scroll-margin-top: 90px; }
-    main p { margin-bottom: 1em; line-height: 1.6; color: #374151; }
+    aside {
+      width: 250px;
+      background-color: #f8f9fa;
+      border-right: 1px solid #e5e7eb;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+      background-color: white;
+    }
+    pre {
+      background-color: #f6f8fa !important;
+      border-radius: 8px;
+      padding: 1em;
+      overflow-x: auto;
+      border: 1px solid #e5e7eb;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.9rem;
+    }
     html { scroll-behavior: smooth; }
+
+    /* Sidebar */
     .active-link { color: #2563eb; font-weight: 600; }
     .sidebar-file { cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 4px; display: block; }
     .sidebar-file:hover { background-color: #e0e7ff; }
     .active-file { background-color: #c7d2fe; font-weight: 600; }
+
+    /* Markdown Heading Styles */
+    .markdown h1 { font-size: 2.25rem; font-weight: 700; margin-top: 2em; margin-bottom: 0.8em; color: #1f2937; scroll-margin-top: 90px; }
+    .markdown h2 { font-size: 1.875rem; font-weight: 700; margin-top: 1.8em; margin-bottom: 0.7em; color: #1f2937; scroll-margin-top: 90px; }
+    .markdown h3 { font-size: 1.5rem; font-weight: 600; margin-top: 1.5em; margin-bottom: 0.6em; color: #1f2937; scroll-margin-top: 90px; }
+    .markdown p { margin-bottom: 1em; line-height: 1.6; color: #374151; }
+    .markdown ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1em; }
+    .markdown li { margin-bottom: 0.5em; }
   </style>
 </head>
 
@@ -36,7 +70,7 @@
   <!-- Navigation -->
   <header class="w-full bg-white shadow-sm flex items-center justify-between px-8 py-3">
     <div class="flex items-center space-x-6">
-      <a href="#" class="font-semibold text-xl text-blue-600">AI4Assembling</a>
+      <a href="https://gary3410.github.io/HCM-Challenge/" class="font-semibold text-xl text-blue-600">AI4Assembling</a>
     </div>
   </header>
 
@@ -45,19 +79,19 @@
     <aside>
       <h2 class="text-gray-700 font-semibold mb-4">Documentation</h2>
       <div id="file-list" class="mb-4">
-        <span class="sidebar-file active-file" data-file="docs/Overview.md">Overview</span>
-        <span class="sidebar-file active-file" data-file="docs/installation.md">Installation</span>
+        <span class="sidebar-file active-file" data-file="docs/overview.md">Overview</span>
+        <span class="sidebar-file" data-file="docs/installation.md">Installation</span>
         <span class="sidebar-file" data-file="docs/examples.md">Examples</span>
         <span class="sidebar-file" data-file="docs/troubleshooting.md">Troubleshooting</span>
-        <span class="sidebar-file" data-file="docs/troubleshooting.md">Data</span>
+        <span class="sidebar-file" data-file="docs/data.md">Data</span>
       </div>
       <ul id="sidebar-links" class="space-y-2 text-sm"></ul>
     </aside>
 
-    <main id="markdown-content" class="prose max-w-none"></main>
+    <main id="markdown-content" class="markdown max-w-none"></main>
   </div>
 
-  <script>
+   <script>
     const content = document.getElementById('markdown-content');
     const sidebar = document.getElementById('sidebar-links');
     let headers = []; // 当前文档 H1/H2 列表
