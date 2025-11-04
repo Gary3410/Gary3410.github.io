@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEHAVIOR-1K</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #222;
+    }
+
+    /* 顶部导航栏 */
+    header {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      text-align: left;
+      color: white;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 30%;
+      left: 8%;
+    }
+
+    .hero-text h1 {
+      font-size: 64px;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .hero-text p {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+    }
+
+    .hero-buttons a {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      margin-right: 15px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .hero-buttons a.secondary {
+      background-color: #444;
+    }
+
+    /* 简介段落 */
+    .intro {
+      padding: 60px 20%;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <strong>BEHAVIOR</strong>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">🏆 2025 BEHAVIOR Challenge</a>
+      <a href="#">Documentation</a>
+      <a href="#">Knowledgebase</a>
+      <a href="#">Research</a>
+      <a href="#">Workshops</a>
+      <a href="#">BEHAVIOR-100</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/hero.png" alt="BEHAVIOR-1K Hero Image">
+    <div class="hero-text">
+      <h1>BEHAVIOR</h1>
+      <p>1000 realistic, full-length household tasks</p>
+      <div class="hero-buttons">
+        <a href="#">GET STARTED</a>
+        <a href="#" class="secondary">SOURCE CODE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <p>
+      <strong>BEHAVIOR-1K</strong> is the first simulation benchmark grounded in real human needs.
+      Based on extensive surveys asking "what do you want robots to do for you?",
+      we present 1,000 household activities that people actually spend time on and want help with.
+    </p>
+    <p>
+      The benchmark introduces long-horizon mobile manipulation challenges in realistic environments,
+      providing a crucial tool to help bridge the gap between current research and real-world,
+      human-centric applications.
+    </p>
+  </section>
+</body>
+</html>
